@@ -1,5 +1,5 @@
-# t0nss3r
-T0nss3r is a simple project using Docker, PostgreSQL, Python, Scraping and others
+# Data Analysis
+Data Analysis is a simple project using Docker, PostgreSQL, Python, Scraping and others
 
 ## Getting Started
 
@@ -10,11 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-Angular CLI: 6.0.8
-Node: 8.11.3
-npm: 5.6.0
-Nodemon: 1.18.3
-Docker: 18.06.0
+Docker version 18.09.2, build 6247962
 
 ```
 
@@ -23,16 +19,18 @@ Docker: 18.06.0
 If you use Docker, you just need exec **$ docker-compose up** to use this project.
 
 ```
-$ git clone https://github.com/vitorpsilva/TutorMatch.git
+$ git clone https://github.com/vitorpsilva/data_analysis.git
 
 ```
 
-## Running with Angular CLI
+## PostgreSQL: localhost:5432 (
+## Jupyter Lab: http://localhost:8888
+ 
+## Building the Database (PostgreSQL)
 
 ```
-$ cd TutorMatch/tutormatch_front
-$ npm install
-$ ng serve
+$ cd data_analysis/postgres
+$ docker build .
 
 ```
 
