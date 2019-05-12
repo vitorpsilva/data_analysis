@@ -20,7 +20,7 @@ If you use Docker, you just need exec **$ docker-compose up** to use this projec
 ```
 $ git clone https://github.com/vitorpsilva/data_analysis.git
 ```
-### Building only the Database (Postgres)
+### Building only the Database (PostgreSQL)
 ```
 $ cd data_analysis/postgres
 $ docker build .
@@ -44,16 +44,27 @@ $ docker-compose up
 
 * [Jupyter Lab](http://localhost:8888) - Jupyter Lab - http://localhost:8888
 
+*Double click on **dataanalysis_code.ipynb** to open*
+
 ![Jupyter Welcome](/images/jupyterlab_welcome.png)
 
-![Jupyter Welcome](/images/jupyterlab_example.png)
+*To run the examples, just push Shift + Enter in each block OR go to Run > Run All Cells*
 
-* [Database](http://localhost:5432) - Postgres - http://localhost:5432
+![Jupyter Welcome](/images/jupyterlab_run.png)
+
+* [Database](http://localhost:5432) - PostgreSQL - localhost:5432
+
+*database*: challenge
+<br>
+*user*: challenge
+<br>
+*password*: challenge
 
 ![Database Connection](/images/postgres_connection.png)
 
-![Database Structure](/images/postgres_structure.png)
+***All data that you need, will be loaded during the image build*** 
 
+![Database Structure](/images/postgres_structure.png)
 
 ## Built With
 
