@@ -1,0 +1,36 @@
+data_postgres:
+  restart: always
+  build: ./postgres
+  volumes:
+    - /data
+  command: "true"
+
+notebook_data:
+  restart: always
+  build: ./notebook
+  volumes:
+    - /home/jovyan/work
+  command: "true"
+
+postgres:
+  build: ./postgres
+  restart: always
+  volumes_from:
+    - data_postgres
+  environment:
+      - POSTGRES_USER:'challenge'
+      - POSTGRES_PASSWORD:'challenge'
+      - POSTGRES_DB:'challenge'
+  ports:
+    - "5432:5432"
+
+notebook:
+  build: ./notebook
+  restart: always
+  environment:
+    - JUPYTER_ENABLE_LAB=yes
+  ports:
+    - "8888:8888"
+  volumes_from:
+    - notebook_data
+  command: "start.sh jupyter lab --port=8888 --NotebookApp.token=''"
