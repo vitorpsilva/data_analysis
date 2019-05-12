@@ -19,14 +19,11 @@ If you use Docker, you just need exec **$ docker-compose up** to use this projec
 
 ```
 $ git clone https://github.com/vitorpsilva/data_analysis.git
-
 ```
 ### Building only the Database (Postgres)
-
 ```
 $ cd data_analysis/postgres
 $ docker build .
-
 ```
 
 ### Building only the Jupyter Lab
@@ -34,7 +31,6 @@ $ docker build .
 ```
 $ cd data_analysis/notebook
 $ docker build .
-
 ```
 
 ## Running **all demo** with Docker Compose
@@ -42,48 +38,38 @@ $ docker build .
 ```
 cd data_analysis/
 $ docker-compose up
-
 ```
 
-## Using the app
+## Using the demo
 
 * [Jupyter Lab](http://localhost:8888) - Jupyter Lab - http://localhost:8888
 
+![Jupyter Welcome](/images/jupyterlab_welcome.png)
 
-
-![API Home](/images/student-create.png)
-
-
+![Jupyter Welcome](/images/jupyterlab_example.png)
 
 * [Database](http://localhost:5432) - Postgres - http://localhost:5432
 
+![Database Connection](/images/postgres_connection.png)
 
+![Database Structure](/images/postgres_structure.png)
 
-![API Home](/images/api-home.png)
-
-
-
-![API Test](/images/api-test.png)
-
-[Frontend](http://localhost:8080) - Tutor Match Frontend - http://localhost:8080
-## PostgreSQL: localhost:5432 (
-## Jupyter Lab: http://localhost:8888
 
 ## Built With
 
-* [NodeJS](https://nodejs.org/en/docs/) - Asynchronous event driven JavaScript runtime
 * [Docker](https://www.docker.com/) - Container
-* [Angular CLI](https://github.com/angular/angular-cli) - DevKit Tools
+* [PostgreSQL](https://www.postgresql.org/about/) - Open source            object-relational database system
+* [Jupyter Lab](https://github.com/jupyterlab/jupyterlab) - An extensible environment for interactive and reproducible computing, based on the Jupyter Notebook and Architecture
 
 ## Versioning
 
-Please, see the [tags on this repository](https://github.com/vitorpsilva/tonsser/tags).
+Please, see the [tags on this repository](https://github.com/vitorpsilva/data_analysis/tags).
 
 ## Authors
 
 * **Antonio Vitor** - [vitorpsilva](https://github.com/vitorpsilva)
 
-See also the list of [contributors](https://github.com/vitorpsilva/tonsser/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/vitorpsilva/data_analysis/contributors) who participated in this project.
 
 ## License
 
