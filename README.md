@@ -52,6 +52,12 @@ $ docker-compose up
 
 ![Jupyter Welcome](/images/jupyterlab_run.png)
 
+## Using the Database and queries
+
+*The QUERY file are available on [/postgres/queries.sql](/postgres/queries.sql)*
+
+*Load data file are available on [/postgres/load_data.sql](/postgres/load_data.sql)*
+
 * [Database](http://localhost:5432) - PostgreSQL - localhost:5432
 
 *database*: challenge
